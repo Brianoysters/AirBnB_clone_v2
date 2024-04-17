@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Routings for amenity-related API requests
+"""Routings for amenity-related API request made
 """
 
 from api.v1.views import app_views

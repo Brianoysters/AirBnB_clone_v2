@@ -1,5 +1,5 @@
 #!/usr/bin/python
-""" holds class City"""
+""" Defines the city class"""
 import models
 from models.base_model import BaseModel, Base
 from os import getenv
@@ -9,7 +9,7 @@ from sqlalchemy.orm import relationship
 
 
 class City(BaseModel, Base):
-    """Representation of city """
+    """Represents a city """
     if models.storage_t == "db":
         __tablename__ = 'cities'
         state_id = Column(String(60), ForeignKey('states.id'), nullable=False)
