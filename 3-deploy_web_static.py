@@ -3,7 +3,6 @@
 """
 This script creates and
 distributes an archive to the web servers
-and execute: fab -f 3-deploy_web_static.py deploy -i ~/.ssh/id_rsa -u ubuntu
 """
 
 from fabric.api import env, local, put, run
