@@ -2,7 +2,8 @@
 """
 
 This fabric script creates a tgz archive and
-execute: fab -f 1-pack_web_static.py do_pack
+execute using 
+: fab -f 1-pack_web_static.py do_pack
 
 """
 
