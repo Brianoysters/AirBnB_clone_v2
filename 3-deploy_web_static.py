@@ -11,9 +11,10 @@ from datetime import datetime
 from os.path import exists, isdir
 env.hosts = ['54.236.113.237', '54.237.70.66']
 
-
 def do_pack():
-    """generates a tgz archive"""
+    """
+    generates a tgz archive
+    """
     try:
         date = datetime.now().strftime("%Y%m%d%H%M%S")
         if isdir("versions") is False:
@@ -48,7 +49,9 @@ def do_deploy(archive_path):
         return False
 
 def deploy():
-    """creates and distributes an archive to the web servers"""
+    """
+    deploys an archive to the web servers
+    """
     archive_path = do_pack()
     if archive_path is None:
         return False
