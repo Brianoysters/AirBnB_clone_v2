@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 """
 
-This fabric script creates a tgz archive and
-execute using 
-: fab -f 1-pack_web_static.py do_pack
+This fabric script creates a tgz archive
 
 """
 
